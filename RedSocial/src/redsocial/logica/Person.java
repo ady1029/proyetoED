@@ -14,6 +14,7 @@ public class Person {
     private String password;
     private Enum country;
     private String occupation;
+    private String p;
 
     public Person(String nick, String password, String country, String occupation) {
         setNick(nick);
