@@ -5,10 +5,7 @@
  */
 package logica;
 
-/**
- *
- * @author rodri
- */
+
 public enum Countries {
     AFGHANISTAN,
     ALBANIA,
@@ -147,7 +144,7 @@ public enum Countries {
     SAINT_VINCENT_AND_THE_GRENADINES,
     SAMOA,
     SAN_MARINO,
-    SÃƒO_TOMÃ_AND_PRÃNCIPE,
+    SÃƒO_TOMï¿½_AND_PRï¿½NCIPE,
     SAUDI_ARABIA,
     SENEGAL,
     SERBIA,
