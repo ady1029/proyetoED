@@ -1,16 +1,16 @@
 package logica;
 
-
 public class Person {
     private String nick;
     private String password;
-    private Enum country;
+    private String country;
     private String occupation;
 
-    public Person(String nick, String password, String country, String occupation) {
+    public Person(String nick, String password, String country,String country, String occupation) {
         setNick(nick);
         setPassword(password);
         setOccupation(occupation);
+        this.country = country;
     }
 
     public String getNick() {

@@ -5,7 +5,6 @@
  */
 package logica;
 
-
 public enum Countries {
     AFGHANISTAN,
     ALBANIA,
