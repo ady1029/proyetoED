@@ -5,7 +5,7 @@ import cu.edu.cujae.ceis.graph.LinkedGraph;
 import cu.edu.cujae.ceis.graph.interfaces.ILinkedWeightedEdgeNotDirectedGraph;
 import cu.edu.cujae.ceis.graph.vertex.Vertex;
 
-public class Systema {
+public class System {
     private String name;
     private ILinkedWeightedEdgeNotDirectedGraph graph;
 
