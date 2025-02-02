@@ -8,19 +8,12 @@ import cu.edu.cujae.ceis.graph.vertex.Vertex;
 public class Systema {
     private String name;
     private ILinkedWeightedEdgeNotDirectedGraph graph;
-    
- 
-    
-    public static void main (String [] args) {
-    	Systema sistema= new Systema("abc");
-		boolean registrado= sistema.registrarse("Jose","123456788", "Cuba", "Ingeniero");
-		System.out.println(registrado);
-    }
 
     public Systema(String name) {
         this.name = name;
         this.graph = new LinkedGraph();
     }
+   
 
     public String getName() {
         return name;
@@ -52,7 +45,7 @@ public class Systema {
     public boolean registrarse(String nick, String password,String country, String occupation) {
     	boolean registrado= false;
     	Person aux= findNick(nick);
-    	if(aux != null) {
+    	if(aux == null) {
     		graph.insertVertex(new Person(nick, password, country, occupation));
     		registrado= true;
     	}    	

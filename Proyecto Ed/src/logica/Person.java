@@ -6,11 +6,11 @@ public class Person {
     private String country;
     private String occupation;
 
-    public Person(String nick, String password, String country,String country, String occupation) {
+    public Person(String nick, String password, String country,String country1) {
         setNick(nick);
         setPassword(password);
         setOccupation(occupation);
-        this.country = country;
+        this.country = country1;
     }
 
     public String getNick() {
