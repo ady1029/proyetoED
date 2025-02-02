@@ -44,7 +44,7 @@ public class Systema {
     }
     public boolean registrarse(String nick, String password,String country, String occupation) {
     	boolean registrado= false;
-    	Person aux= findNick(nick);
+    	Vertex aux= findNick(nick);
     	if(aux == null) {
     		graph.insertVertex(new Person(nick, password, country, occupation));
     		registrado= true;
@@ -53,13 +53,13 @@ public class Systema {
     	
     }
     
-    public Person findNick(String nick) {
-    	Person aux = null;
+    public Vertex findNick(String nick) {
+    	Vertex aux = null;
     	Iterator <Vertex> it= graph.getVerticesList().iterator();
     	while(it.hasNext() && aux== null) {
     		Vertex actual= it.next();
     		if(((Person) actual.getInfo()).getNick().equalsIgnoreCase(nick))
-    			aux =(Person)actual.getInfo();
+    			aux = actual;
     		}
     	return aux;
     }
