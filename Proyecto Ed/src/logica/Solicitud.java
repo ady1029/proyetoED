@@ -1,6 +1,6 @@
 package logica;
 
-public class Solicitud {
+public class Request{
 	private Person PersonaEnvia; 
 	private int cantdTrabajos;
 	public Person getPersonaEnvia() {
